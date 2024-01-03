@@ -7,7 +7,7 @@
 	border: 3px solid darkorange;
 	border-radius: 5px;
 	background-color: burlywood;
-	box-shadow:0 0 10px #000
+	box-shadow: 0 0 10px #000;
 }
 
 .list {
@@ -20,6 +20,9 @@
 	padding: 5px 10px;
 	text-align: left;
 	background-color: darkorange;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .button {
@@ -27,6 +30,7 @@
 	border-radius: 5px;
 	background: rgb(66, 66, 66);
 	color: darkorange;
+	text-decoration: none;
 }
 
 .input {
@@ -35,7 +39,20 @@
 	border-radius: 3px;
 	background: rgb(66, 66, 66);
 	color: darkorange;
+}
 
+.todoList {
+	color: antiquewhite;
+	margin: 10px;
+	text-align: left;
+	text-decoration: none;
+
+	white-space: nowrap;
+}
+
+.error {
+	color: brown;
+	font-size: large;
 }
 
 .loader {

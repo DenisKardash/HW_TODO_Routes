@@ -1,4 +1,8 @@
-export const useRequestDeleteTodo = (refreshTodos) => {
+import { useNavigate } from 'react-router-dom';
+
+export const useRequestDeleteTodo = () => {
+	const navigate = useNavigate();
+
 	const requestDeleteTodo = (id) => {
 		const deleteTodo = window.confirm('Are you sure you want to delete TODO?');
 		if (deleteTodo) {
@@ -6,10 +10,10 @@ export const useRequestDeleteTodo = (refreshTodos) => {
 				method: `DELETE`,
 			});
 			alert('TODO --- is deleted');
-			refreshTodos();
+			navigate('/');
 		}
 	};
-
+	
 	return {
 		requestDeleteTodo,
 	};

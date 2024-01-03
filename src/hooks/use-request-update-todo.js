@@ -10,7 +10,7 @@ export const useRequestUpdateTodo = (refreshTodos) => {
 				}),
 			});
 			alert('Todo is Changed');
-			refreshTodos();
+			// refreshTodos();
 		}
 	};
 
